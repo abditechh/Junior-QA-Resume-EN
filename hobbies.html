@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdi Abdirashid — Hobbies</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f8fafc;
+}
+.document {
+    max-width: 210mm;
+    margin: 15mm auto;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.header {
+    background: linear-gradient(135deg, #1e2937 0%, #334155 100%);
+    color: white;
+    padding: 25px 35px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.profile-img {
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.content {
+    padding: 35px;
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: #1f2937;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e2937;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+.hobby-card {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+.hobby-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.hobby-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.hobby-image-van {
+    height: 240px;
+    object-position: center 25%; /* Moves the image UP to hide knees */
+}
+.video-container {
+    margin: 25px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+/* Print Optimization */
+@media print {
+    body { background: white; margin: 0; }
+    .document { box-shadow: none; margin: 0; max-width: 100%; }
+    .content { padding: 30px 35px; }
+    .video-container { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="document mx-auto">
+    <!-- Header -->
+    <div class="header">
+        <img src="img.png" alt="Abdi Abdirashid" class="profile-img">
+        <div>
+            <h1 class="text-3xl font-bold tracking-tight">Abdi Abdirashid</h1>
+            <p class="text-blue-200 text-lg">Hobbies & Personal Interests</p>
+            <div class="text-sm mt-4 space-y-1">
+                <div>Stallikerstrasse 8 • 8906 Bonstetten</div>
+                <div>+41 76 459 70 06 • abdi.abdirashid@hotmail.com</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Hobbies & Personal Interests</h2>
+
+        <div class="hobby-card">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-palette text-3xl text-purple-600 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Creative Projects</h3>
+                    <p class="mb-3">A selection of my creative and digital personal projects.</p>
+                    <a href="https://abditechh.github.io/career-change-QA-portfolio-en/creative-projects.html" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 font-medium">Open Creative Projects →</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls class="w-full">
+                <source src="video (1).mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
+        </div>
+
+        <!-- Existing Hobbies -->
+        <div class="hobby-card">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-code text-3xl text-blue-600 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Programming & Technical Learning</h3>
+                    <p>In my free time, I work on programming and technical projects. I continuously learn new skills to expand my technical knowledge.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-drone text-3xl text-emerald-600 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Flying Drones</h3>
+                    <p>At weekends, I enjoy flying drones with my flatmate. This hobby combines my interest in technology with nature and outdoor adventures.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-dumbbell text-3xl text-rose-600 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Fitness & Sport</h3>
+                    <p>Fitness is an important part of my routine. I exercise regularly to remain physically fit and mentally balanced.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Hobbies -->
+        <h2 class="mt-12">Other Hobbies</h2>
+        <p class="text-gray-600 mb-8">I also enjoy outdoor and team activities that keep me active and connected with friends and nature.</p>
+
+        <div class="hobby-card">
+            <img src="image 2.jpg" alt="Basketball" class="hobby-image">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-basketball-ball text-3xl text-orange-600 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Basketball</h3>
+                    <p>I enjoy playing basketball with friends. I am still improving, but it keeps me active and gives us time together.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="image 1.JPG" alt="Camping" class="hobby-image">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-campground text-3xl text-emerald-700 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Camping & Outdoor Adventures</h3>
+                    <p>Camping is one of my favourite ways to unwind. I enjoy spending time in nature, setting up camp and exploring new places.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Van Life Photo -->
+        <div class="hobby-card">
+            <img src="image 3.JPG" alt="Van Life" class="hobby-image hobby-image-van">
+            <div class="flex items-start gap-4">
+                <i class="fas fa-van-shuttle text-3xl text-amber-600 mt-1"></i>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2">Van Life & Roadtrips</h3>
+                    <p>I enjoy road trips and spending time in the van, combining travel, nature and relaxed moments away from everyday life.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-600 mt-10 text-sm">
+            These hobbies help me maintain a healthy balance and continue developing my technical, physical and creative abilities.
+        </p>
+    </div>
+</div>
+
+<script>
+// Optional: Autoplay with sound off
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector("video");
+    if (video) {
+        video.muted = true;
+        video.play().catch(() => {});
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdi Abdirashid — Profile & Motivation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #f8fafc;
+        }
+        
+        .document {
+            max-width: 210mm;
+            margin: 15mm auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e2937 0%, #334155 100%);
+            color: white;
+            padding: 25px 35px 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 110px;
+            height: 140px;
+            object-fit: cover;
+            border: 4px solid white;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        
+        .content {
+            padding: 35px;
+            font-size: 15.5px;
+            line-height: 1.65;
+            color: #1f2937;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1e2937;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        
+        .date {
+            text-align: right;
+            font-size: 16px;
+            color: #4b5563;
+            margin-bottom: 25px;
+        }
+        
+        .signature {
+            height: 75px;
+            margin: 30px 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .document {
+                margin: 0;
+                max-width: 100%;
+                box-shadow: none;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 24px;
+            }
+
+            .profile-img {
+                width: 95px;
+                height: 120px;
+            }
+
+            .content {
+                padding: 24px;
+                font-size: 15px;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+        
+        @media print {
+            body { background: white; margin: 0; }
+            .document { box-shadow: none; margin: 0; max-width: 100%; }
+            .content { padding: 30px 35px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="document mx-auto">
+        <div class="header">
+            <img src="img.png" alt="Abdi Abdirashid" class="profile-img">
+
+            <div>
+                <h1 class="text-3xl font-bold tracking-tight">Abdi Abdirashid</h1>
+                <p class="text-blue-200 text-lg">Profile & Motivation</p>
+
+                <div class="text-sm mt-4 space-y-1">
+                    <div>Stallikerstrasse 8 • 8906 Bonstetten</div>
+                    <div>+41 76 459 70 06 • abdi.abdirashid@hotmail.com</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="date" id="current-date"></div>
+
+            <h2>Profile & Motivation</h2>
+
+            <p>Welcome, and thank you for visiting my profile.</p>
+
+            <p>My name is Abdi Abdirashid. As a motivated career changer into quality assurance, I bring a completed Maintenance Practitioner EBA apprenticeship and professional experience in production, maintenance and installation.</p>
+
+            <p>Throughout my working life, I have learned to take responsibility, work carefully and adapt quickly to new situations. I work well independently and also value teamwork. Reliability, respect and a positive attitude are very important to me.</p>
+
+            <p>I am originally from Somalia and grew up in Kenya and Tanzania before moving to Switzerland in 2016. Switzerland is now my home, where I completed my education and built my life. Growing up in different countries taught me to approach people openly, understand different cultures and adapt quickly to new environments.</p>
+
+            <p>Since April 2025, I have worked in production at Stooss AG. Alongside my full-time job, I am completing the Google IT Support Professional Certificate on Coursera and developing practical QA skills in manual testing, test cases, bug reporting, regression testing, exploratory testing, browser DevTools and API testing fundamentals.</p>
+
+            <p>I communicate calmly and clearly, document carefully and work with a strong awareness of quality and safety. Reliability and willingness to learn are among my key strengths.</p>
+
+            <p>I gain practical experience through my own job application tracker with authentication and cloud data and through my HTML, CSS and JavaScript learning portfolio. I test login, forms, validation and responsive views, write test cases and document defects with expected and actual results.</p>
+
+            <p>I am looking for a junior Quality Assurance or Software Testing position where I can test applications carefully, document defects clearly and learn from an experienced QA team. My notice period is one month; no visa sponsorship is required.</p>
+
+            <p>Thank you for your interest and your time. I look forward to introducing myself personally.</p>
+
+            <p class="mt-10">Kind regards</p>
+
+            <img class="signature" src="Picture1.png" alt="Unterschrift">
+
+            <p class="font-medium">Abdi Abdirashid</p>
+
+            <p class="mt-8">
+                <a href="Berufsattest Unterhaltspraktiker EBA-1.png" target="_blank"
+                   class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+                    <i class="fas fa-file-pdf"></i> Berufsattest Maintenance Practitioner EBA View
+                </a>
+            </p>
+            <p class="mt-3">
+                <a href="UAS-A1-A3-certificate-pdf.pdf" target="_blank" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+                    <i class="fas fa-certificate"></i> Drone certificate A1/A3 View
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const currentDate = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const dateString = currentDate.toLocaleDateString('de-CH', options);
+        document.getElementById('current-date').innerText = dateString;
+    </script>
+</body>
+</html>

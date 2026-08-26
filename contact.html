@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdi Abdirashid — Visitenkarte</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        /* FULL SCREEN CENTER WRAPPER (KEY FIX) */
+        .page-wrapper {
+            min-height: 100vh;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            padding: 20px;
+        }
+
+        .business-card {
+            max-width: 520px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 70px -20px rgba(0, 0, 0, 0.18);
+            transition: transform 0.3s ease;
+        }
+
+        .business-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e2937 0%, #334155 100%);
+            color: white;
+            padding: 45px 35px 35px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 135px;
+            height: 135px;
+            object-fit: cover;
+            border: 6px solid white;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .content {
+            padding: 40px 35px;
+            text-align: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 22px;
+            font-size: 16px;
+        }
+
+        .contact-item i {
+            width: 26px;
+            color: #3b82f6;
+            font-size: 20px;
+        }
+
+        .contact-item a {
+            color: #1f2937;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #2563eb;
+        }
+
+        .linkedin {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <div class="business-card">
+
+        <div class="header">
+            <img src="img.png" alt="Abdi Abdirashid" class="profile-img">
+
+            <h1 class="text-3xl font-bold tracking-tight">Abdi Abdirashid</h1>
+
+            <p class="text-blue-200 mt-2 text-lg">
+                Junior QA Tester
+            </p>
+        </div>
+
+        <div class="content">
+
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+41764597006">+41 76 459 70 06</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:abdi.abdirashid@hotmail.com">
+                    abdi.abdirashid@hotmail.com
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://www.google.com/maps?q=Stallikerstrasse+8,+8906+Bonstetten"
+                   target="_blank">
+                    Stallikerstrasse 8, 8906 Bonstetten
+                </a>
+            </div>
+
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/abdi-abdirashid-09aa81294/"
+                   target="_blank"
+                   class="inline-flex items-center gap-3 text-blue-600 hover:text-blue-700 font-medium">
+
+                    <i class="fab fa-linkedin text-4xl"></i>
+                    <span>LinkedIn Profil besuchen</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="bg-gray-900 text-gray-400 text-center py-6 text-sm">
+            © 2026 Abdi Abdirashid • Schweiz
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
